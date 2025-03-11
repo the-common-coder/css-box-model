@@ -3,10 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The CSS Box Model</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Hello, world!
+    <h1>CSS Box Model and Box-Sizing Demo</h1>
+
+    <div class="explanation">
+      <p>
+        The CSS Box Model consists of content, padding, border, and margin. The
+        <code>box-sizing</code> property affects how the width and height of an
+        element are calculated:
+      </p>
+      <ul>
+        <li>
+          <strong>content-box</strong> (default): Width and height apply to
+          content area only. Padding and border are added to the specified
+          dimensions.
+        </li>
+        <li>
+          <strong>border-box</strong>: Width and height include content,
+          padding, and border. The content area shrinks to accommodate padding
+          and border.
+        </li>
+      </ul>
+    </div>
+
+    <div class="demo-container">
+      <h2>Visual Comparison</h2>
+
+      <div class="box-model">
+        <div class="box-wrapper">
+          <div class="box-title">box-sizing: content-box (default)</div>
+          <div class="box">Content Area</div>
+          <div class="calculation">
+            content (300×150) + padding (40) + border (10) = total (350×200)
+          </div>
+        </div>
+
+        <div class="box-wrapper">
+          <div class="box-title">box-sizing: border-box</div>
+          <div class="box">Content Area</div>
+          <div class="calculation">
+            content (250x100) + padding (40) + border (10) = total (300x150)
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

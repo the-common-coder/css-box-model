@@ -24,7 +24,6 @@ h2 {
 .demo-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
 .box-model {
@@ -48,6 +47,8 @@ h2 {
   font-size: 16px;
 }
 
+/* start - adjust styles here */
+
 .box {
   display: flex;
   align-items: center;
@@ -55,6 +56,8 @@ h2 {
   color: white;
   background-color: #2196f3;
 }
+
+/* end - adjust styles here */
 
 .dimensions {
   position: absolute;
